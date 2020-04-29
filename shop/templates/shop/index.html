@@ -126,7 +126,8 @@ localStorage.setItem('cart', JSON.stringify(cart));
 document.getElementById('cart').innerHTML = Object.keys(cart).length;
 });
 
-
+$("#popcart").popover()
+document.getElementById("popcart").setAttribute('data-content', '<h5>Cart</h5>');
 
 </script>
   {% endblock %}
